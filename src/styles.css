@@ -12,6 +12,8 @@ body {
   line-height: 1.2;
 }
 
+/* hero section */
+
 header {
   background-color: #000;
   text-align: center;
@@ -99,4 +101,47 @@ header {
 
 .hero-img-column {
   background: no-repeat center center/cover url(./img/hero.jpg);
+}
+
+/* menu section */
+
+#section-menu {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  gap: 2rem;
+}
+
+.grid-2-columns-even {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* second column */
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hrImg {
+  border-color: hsl(0, 0%, 100%, 0.5);
+}
+
+.hrImg:last-child {
+  border: none;
 }
