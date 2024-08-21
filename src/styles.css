@@ -10,6 +10,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   line-height: 1.2;
+
+  display: grid;
+  grid-template-rows: 1fr 7fr;
+  grid-template-columns: auto;
 }
 
 /* hero section */
@@ -29,12 +33,15 @@ header {
 #content {
   margin: 0 auto;
   height: 100vh;
+  background-color: #000;
+  grid-row: 2/3;
+  width: 100%;
 }
 
 #section-hero {
   background-color: #000;
   color: #fff;
-  height: 100vh;
+  height: 100%;
 }
 
 .container {
@@ -48,7 +55,8 @@ header {
 
 .hero-box {
   position: absolute;
-  transform: translate(25%, 15%);
+  transform: translate(30%, 15%);
+  padding: 0 4rem 0 1rem;
 }
 
 .restaurant-title {
@@ -77,7 +85,8 @@ header {
 
 .nav-btn-1,
 .nav-btn-2,
-.nav-btn-3 {
+.nav-btn-3,
+.nav-btn-4 {
   font-family: inherit;
   border: 2px solid #fff;
   background: none;
@@ -89,7 +98,8 @@ header {
 
 .nav-btn-1:hover,
 .nav-btn-2:hover,
-.nav-btn-3:hover {
+.nav-btn-3:hover,
+.nav-btn-4:hover {
   background-color: #fff;
   color: #000;
   transition: ease-in 0.25s;
@@ -170,4 +180,18 @@ header {
 
 .hrImg:last-child {
   border: none;
+}
+
+/* contact page */
+
+.contact-us {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+}
+
+.contact-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: white;
 }

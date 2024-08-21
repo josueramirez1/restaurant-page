@@ -38,23 +38,6 @@ export default function home() {
   heroBox.appendChild(heroHeading);
   heroBox.appendChild(paragraphHeading);
 
-  const navButtons = document.createElement("nav");
-  navButtons.classList.add("nav-buttons");
-  heroBox.appendChild(navButtons);
-
-  for (let i = 1; i <= 3; i++) {
-    const navBtn = document.createElement("button");
-    navBtn.classList.add("nav-btn-" + [i]);
-    navButtons.appendChild(navBtn);
-  }
-
-  const nav1 = document.querySelector(".nav-btn-1");
-  const nav2 = document.querySelector(".nav-btn-2");
-  const nav3 = document.querySelector(".nav-btn-3");
-  nav1.textContent = "Menu";
-  nav2.textContent = "Contact";
-  nav3.textContent = "Reserve a table";
-
   // 2nd column
   const heroImage = document.createElement("div");
   heroImage.classList.add("hero-img-column");
