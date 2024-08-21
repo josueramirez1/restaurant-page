@@ -28,7 +28,7 @@ export default function menu() {
   container.appendChild(secondColumn);
 
   const menuTitle = document.createElement("h1");
-  menuTitle.textContent = "Seasonal Menu";
+  menuTitle.textContent = "A few highlights from our menu";
   firstColumn.appendChild(menuTitle);
 
   const menuParagraph = document.createElement("p");
@@ -44,29 +44,36 @@ export default function menu() {
     const item = listItem().listItem;
     menuList.appendChild(item);
     const img = document.createElement("img");
+    const divText = document.createElement("div");
+    divText.classList.add("div-text");
+    const itemh2 = document.createElement("h2");
     const itemP = document.createElement("p");
     const imgHr = document.createElement("hr");
     imgHr.classList.add("hrImg");
-    img.style.width = "200px";
+    img.style.width = "180px";
     item.classList.add("item" + [i]);
     if (i === 1) {
       img.src = banana;
+      itemh2.textContent = "Banana Bread";
       itemP.textContent =
         "Made with organic ingredients, our banana bread sets the standard for sweet bread";
     }
     if (i === 2) {
       img.src = pasta;
-
+      itemh2.textContent = "Pasta";
       itemP.textContent =
         "Even the most critical will not resist a meal of our famous pasta";
     }
     if (i === 3) {
       img.src = steak;
+      itemh2.textContent = "Steak";
       itemP.textContent =
         "Nothing beats a classic, accompanied by fresh spices and herbs to enhance flavor";
     }
     item.appendChild(img);
-    item.appendChild(itemP);
+    item.appendChild(divText);
+    divText.appendChild(itemh2);
+    divText.appendChild(itemP);
     menuList.appendChild(imgHr);
   }
 }

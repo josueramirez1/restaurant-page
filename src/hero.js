@@ -51,8 +51,8 @@ export default function home() {
   const nav1 = document.querySelector(".nav-btn-1");
   const nav2 = document.querySelector(".nav-btn-2");
   const nav3 = document.querySelector(".nav-btn-3");
-  nav1.textContent = "Home";
-  nav2.textContent = "Menu";
+  nav1.textContent = "Menu";
+  nav2.textContent = "Contact";
   nav3.textContent = "Reserve a table";
 
   // 2nd column

@@ -112,15 +112,27 @@ header {
 }
 
 .menu {
-  display: flex;
-  align-items: center;
-  padding: 4rem;
-  gap: 2rem;
+  padding: 12rem;
 }
 
 .grid-2-columns-even {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  align-content: center;
+}
+
+/* first colum */
+
+.first-column h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.first-column p {
+  font-size: 1.3rem;
+  line-height: 2;
 }
 
 /* second column */
@@ -136,6 +148,20 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.div-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.div-text h2 {
+  font-size: 1.3rem;
+}
+
+.div-text p {
+  line-height: 1.6;
 }
 
 .hrImg {
