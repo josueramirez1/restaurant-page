@@ -38,6 +38,10 @@ header {
   height: 100%;
 }
 
+#content {
+  height: 100%;
+}
+
 /* hero section */
 
 #section-hero {
@@ -118,7 +122,7 @@ header {
   /* grid-column: 1/3; */
 }
 
-/* menu section */
+/* MENU SECTION */
 
 #section-menu {
   background-color: #000;
@@ -127,7 +131,7 @@ header {
 }
 
 .menu {
-  padding: 6rem 12rem;
+  padding: 0 10rem 0;
 }
 
 .grid-2-columns-even {
@@ -137,7 +141,7 @@ header {
   align-content: center;
 }
 
-/* first colum */
+/* menu: first column */
 
 .first-column h1 {
   font-size: 2.6rem;
@@ -150,7 +154,7 @@ header {
   line-height: 2;
 }
 
-/* second column */
+/* menu: second column */
 
 .menu-list {
   display: flex;
@@ -187,16 +191,36 @@ header {
   border: none;
 }
 
-/* contact page */
+/* CONTACT PAGE */
+
+#section-contact {
+  height: 100%;
+}
 
 .contact-us {
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-content: center; */
+  align-content: center;
+  justify-items: center;
 }
 
 .contact-title {
   font-size: 2.8rem;
   font-weight: 600;
   color: white;
+}
+
+.contact-title,
+.address,
+.hours-of-operation {
+  color: #fff;
+  align-self: center;
+}
+
+.address,
+.hours-of-operation {
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 2.5px;
+  font-size: 0.8rem;
 }
