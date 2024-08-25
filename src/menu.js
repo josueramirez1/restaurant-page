@@ -15,7 +15,7 @@ export default function menu() {
 
   const container = Container().container;
 
-  container.classList.add("grid-2-columns-even");
+  container.classList.add("grid-2-columns");
   container.classList.add("menu");
   hero.appendChild(container);
 
