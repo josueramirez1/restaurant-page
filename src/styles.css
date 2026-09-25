@@ -22,7 +22,7 @@ html {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: url("./coffee_nero.jpg");
+  background-image: url("./assets/images/coffee_shop.jpg");
   background-size: cover;
 }
 
@@ -46,6 +46,7 @@ html {
 
 #content h1 {
   font-family: "Nero", sans-serif;
+  padding: 1.2rem;
 }
 
 .nav-btn {
@@ -61,4 +62,17 @@ html {
 
 .nav-btn:hover {
   color: hsl(0, 0%, 86%);
+}
+
+.menu ul {
+  text-transform: none;
+  display: flex;
+  gap: 12px;
+  padding-inline: 12px;
+}
+
+.menu-item-one,
+.menu-item-two,
+.menu-item-three {
+  width: 100%;
 }

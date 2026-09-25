@@ -1,4 +1,10 @@
-import loadSite from "./loadSite.js";
+import home from "./home.js";
+import menu from "./menu.js";
 import "./styles.css";
 
-loadSite();
+function init() {
+  home();
+  menu();
+}
+
+init();
