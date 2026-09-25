@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Nero";
+  src: url("assets/fonts/Cafe\ Nero\ M54.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./coffee_nero.jpg");
+  background-size: cover;
+}
+
+#nav {
+  flex: 1;
+  align-content: center;
+
+  display: flex;
+  gap: 24px;
+}
+
+#content {
+  flex: 2 0 80%;
+  width: 100%;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  align-content: center;
+  text-align: center;
+}
+
+#content h1 {
+  font-family: "Nero", sans-serif;
+}
+
+.nav-btn {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 800;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 96%);
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  color: hsl(0, 0%, 86%);
+}
