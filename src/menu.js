@@ -1,11 +1,13 @@
 import { contentContainer, headerContainer } from "./contentContainer.js";
 import croissants from "./assets/images/croissants.jpg";
 import carrot_cake from "./assets/images/carrot_cake.jpg";
-import eclairs from "./assets/images/eclairs.jpg";
+import donuts from "./assets/images/donuts.jpg";
 
 export default function menu() {
-  //clear all things
-  headerContainer.style.background = "none";
+  //clear
+  contentContainer.textContent = "";
+  contentContainer.removeAttribute("class");
+  headerContainer.style.backgroundImage = "none";
   headerContainer.style.backgroundColor = "black";
   contentContainer.textContent = "";
   //add menu classlist to id content
@@ -39,8 +41,8 @@ export default function menu() {
   const descriptionThree = document.createElement("h6");
   const imgThree = document.createElement("img");
   descriptionThree.textContent =
-    "Donuts are great but eclairs...well we'll let you find out :)";
-  imgThree.src = eclairs;
+    "What's not to love about these wholly delights";
+  imgThree.src = donuts;
   imgThree.classList.add("menu-item-three");
-  menuListItemThree.append(imgThree, descriptionThree);
+  menuListItemThree.append(descriptionThree, imgThree);
 }

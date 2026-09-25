@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: "Nero";
-  src: url("assets/fonts/Cafe\ Nero\ M54.ttf") format("truetype");
+  font-family: "Mellos";
+  src: url("assets/fonts/Mellos.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -21,7 +21,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  margin-inline: auto;
   background-image: url("./assets/images/coffee_shop.jpg");
   background-size: cover;
 }
@@ -36,16 +36,16 @@ html {
 
 #content {
   flex: 2 0 80%;
-  width: 100%;
   color: whitesmoke;
   text-transform: uppercase;
   font-size: 1.7rem;
   align-content: center;
   text-align: center;
+  max-width: 1200px;
 }
 
 #content h1 {
-  font-family: "Nero", sans-serif;
+  font-family: "Mellos", sans-serif;
   padding: 1.2rem;
 }
 
@@ -64,10 +64,15 @@ html {
   color: hsl(0, 0%, 86%);
 }
 
+.menu {
+  background-color: black;
+}
+
 .menu ul {
   text-transform: none;
   display: flex;
   gap: 12px;
+  list-style-type: none;
   padding-inline: 12px;
 }
 
@@ -75,4 +80,22 @@ html {
 .menu-item-two,
 .menu-item-three {
   width: 100%;
+  border-radius: 12px;
+  padding: 0.4rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.about div {
+  flex: 0 1 600px;
+}
+
+.about img {
+  flex: 0 1 auto;
+  width: auto;
+  height: 600px;
+  border-radius: 12px;
 }
