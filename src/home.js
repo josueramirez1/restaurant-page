@@ -15,9 +15,8 @@ export default function home() {
   //apply
   const headerTitle = document.createElement("h1");
   const headerDescription = document.createElement("p");
-  headerTitle.textContent = "Landmark Coffee";
-  headerDescription.textContent =
-    "Since 1991. Serving local, rich coffee to our community.";
+  headerTitle.textContent = "Coffeeteria & Bistro";
+  headerDescription.textContent = "Since 1991. Serving our local community.";
   contentContainer.appendChild(headerTitle);
   contentContainer.appendChild(headerDescription);
 }

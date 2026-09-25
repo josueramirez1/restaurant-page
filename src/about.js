@@ -15,10 +15,10 @@ export default function about() {
 
   const aboutTitle = document.createElement("h1");
   aboutTitle.textContent = "About Us";
-  const aboutDescription = document.createElement("h6");
+  const aboutDescription = document.createElement("p");
   const aboutImg = document.createElement("img");
   aboutDescription.textContent =
-    "Since 1991 our purpose has been to serve our local community. We believe in a space to savor drinks, conversations and long-lasting memories. We are Landmark Coffee.";
+    "Since 1991 our purpose has been to serve our local community. We believe in a space to savor drinks, conversations and long-lasting memories.";
   aboutImg.src = community;
   aboutTextContainer.append(aboutTitle, aboutDescription);
   contentContainer.append(aboutTextContainer, aboutImg);

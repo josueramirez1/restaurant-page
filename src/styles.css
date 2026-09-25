@@ -69,11 +69,15 @@ html {
 }
 
 .menu ul {
-  text-transform: none;
   display: flex;
   gap: 12px;
   list-style-type: none;
   padding-inline: 12px;
+  font-family: inherit;
+}
+
+.menu ul p {
+  font-size: 1.2rem;
 }
 
 .menu-item-one,
@@ -98,4 +102,8 @@ html {
   width: auto;
   height: 600px;
   border-radius: 12px;
+}
+
+.about p {
+  font-size: 1.2rem;
 }

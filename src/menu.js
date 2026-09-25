@@ -14,7 +14,7 @@ export default function menu() {
   contentContainer.classList.add("menu");
   //create unorderlist and item containers
   const menuTitle = document.createElement("h1");
-  menuTitle.textContent = "Coffee Shop Favorites!";
+  menuTitle.textContent = "Fan Favorites!";
 
   const menuUnorderedList = document.createElement("ul");
   const menuListItemOne = document.createElement("li");
@@ -23,7 +23,7 @@ export default function menu() {
   menuUnorderedList.append(menuListItemOne, menuListItemTwo, menuListItemThree);
   contentContainer.append(menuTitle, menuUnorderedList);
   //first item
-  const descriptionOne = document.createElement("h6");
+  const descriptionOne = document.createElement("p");
   const imgOne = document.createElement("img");
   descriptionOne.textContent =
     "Sugar-coated croissaint filled with strawberry jelly";
@@ -31,17 +31,16 @@ export default function menu() {
   imgOne.classList.add("menu-item-one");
   menuListItemOne.append(descriptionOne, imgOne);
   //second item
-  const descriptionTwo = document.createElement("h6");
+  const descriptionTwo = document.createElement("p");
   const imgTwo = document.createElement("img");
-  descriptionTwo.textContent = "Cozy carrot cake to warm up every morning";
+  descriptionTwo.textContent = "Carrot cake";
   imgTwo.src = carrot_cake;
   imgTwo.classList.add("menu-item-two");
   menuListItemTwo.append(imgTwo, descriptionTwo);
   //third item
-  const descriptionThree = document.createElement("h6");
+  const descriptionThree = document.createElement("p");
   const imgThree = document.createElement("img");
-  descriptionThree.textContent =
-    "What's not to love about these wholly delights";
+  descriptionThree.textContent = "Glazed and coffee donut";
   imgThree.src = donuts;
   imgThree.classList.add("menu-item-three");
   menuListItemThree.append(descriptionThree, imgThree);
